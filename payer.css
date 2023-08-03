@@ -1,0 +1,168 @@
+body{
+    background: linear-gradient( to top, rgb(76, 112, 179),rgb(243, 205, 248));
+
+}
+
+.form_search_header input{
+    border-radius: 25px;
+    border-color: rgba(121,224,235,1);
+    height:5px;
+    padding: 1em;
+    
+}
+
+label, #toggle
+{
+    display: none;
+}
+
+
+.menu {
+    margin :auto;
+    align-items: center;                             
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(88, 127, 199);
+}
+
+.menu li {
+    list-style-type: none ;
+    display: inline-block;
+    margin-left: 10em;
+    
+}
+
+.menu a {
+    color: white;
+	text-decoration: none;
+}
+
+
+/* Start form  attributes */
+.formulaire{
+    width: 400px;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 37%;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-210deg, rgb(243, 205, 248) 50%,rgb(76, 112, 179) 50%);
+    opacity: 0.9;
+}
+
+.paiement{
+    width: 200px;
+    height: 40px;
+    margin-left: 25%;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font: 35px sans-serif ;
+}
+
+.titre1{
+    color:rgb(76, 112, 179);
+    margin-left: 8%;
+}
+
+.titre2{
+    color:rgb(243, 205, 248);
+    margin-left: 10%;
+}
+
+.titre{
+    color:rgb(76, 112, 179);
+    font-size: 50px;
+}
+
+
+.form-input{
+    width: 300px;
+    height: 35px;
+    margin-left: 15%;
+    margin-top: 2%;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    transition: 0.2s linear;
+}
+
+
+
+input[type=submit] {
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(76, 112, 179) ;
+    background-color: rgb(243, 205, 248);
+    box-shadow: rgb(243, 205, 248)  0 0 0.4em;
+    font-size: 15px;
+}
+
+
+
+@media all and (max-width: 991px)
+{
+    nav .menu
+    {
+        display: none;
+        /*flex-direction: column;*/
+        background-color: rgb(88, 127, 199);
+        height: auto;
+        width: 100%;
+
+    }
+    
+    label 
+    {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .menu {
+        /* styles pour le menu */
+        display: none;
+        position: relative;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+    
+    #toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .formulaire{
+        margin: 0.1em;
+        margin-top: 10em;
+        padding: 0.1em;
+        width: 100%;
+    }
+
+}
+

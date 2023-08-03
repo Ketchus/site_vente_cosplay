@@ -1,0 +1,267 @@
+body{
+    background: rgb(138, 187, 214);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form_search_header input{
+    border-radius: 25px;
+    border-color: rgba(121,224,235,1);
+    height:5px;
+    padding: 1em;
+    
+}
+
+label, #toggle
+{
+    display: none;
+}
+
+
+.menu {
+    margin :auto;
+    align-items: center;                             
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(88, 127, 199);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu li {
+    list-style-type: none ;
+    display: inline-block;
+    margin-left: 2em;
+    
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover {
+    color: rgb(243, 205, 248);
+}
+
+.bvimg{
+    position: relative;
+    display: flex;
+    justify-content: center;   
+}
+
+h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 85px;
+    color: rgb(243, 205, 248);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.titre{
+    top: -10%;
+
+}
+
+h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: rgb(243, 205, 248);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.vente{
+    box-shadow: 0 10px 50px rgb(255, 215, 0);
+
+}
+
+
+
+.bas {
+    position: relative;
+    display: flex;                        
+    justify-content: center; 
+    top: 3%;
+}
+
+.bas li{
+    list-style-type: none ;
+    padding:auto;
+    margin: auto;
+}
+
+.bas img {
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    width: 40%;
+    height: 40%;
+}
+
+  
+.bas img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 30px rgb(243, 205, 248);
+}
+
+.article {
+    margin-left: 14%;
+    width: 13%;
+    height: 35%;
+    position: relative;
+    display: inline-block;
+    border: 1px solid rgb(243, 205, 248);
+    border-radius: 3%;
+    box-shadow: 0 5px 30px rgb(243, 205, 248);
+    background-color: rgb(88, 127, 199);
+    transition: transform 0.2s ease-in-out;
+}
+
+  
+.article:hover {
+    transform: translateY(-10px);
+}
+  
+.article img {
+    border-radius: 3%;
+    width: 70%;
+    height: 60%;
+}
+  
+.ref {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+  
+.taille {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+  
+.prix {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.nom{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.visu{
+    margin-left: 46%;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(76, 112, 179) ;
+    background-color: rgb(243, 205, 248);
+    box-shadow: rgb(243, 205, 248)  0 0 0.4em;
+    font-size: 15px;
+}
+
+
+
+
+@media all and (max-width: 991px)
+{
+    nav .menu
+    {
+        display: none;
+        height: auto;
+        width: 100%;
+
+    }
+    
+    label 
+    {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .menu {
+        /* styles pour le menu */
+        display: none;
+        position: relative;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+    
+    #toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    h1{
+        top: -9%;
+        font-size: 70px ;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 50px ;
+    }
+
+    .cat{
+        top: 5%;
+        font-size: 50px ;
+    }
+
+    .bas img {
+        width: 100%;
+        height: 100%;
+        margin-left: -30%;
+    }
+    
+
+    .article {
+        text-align: center;
+        width: 60%;
+        height: 35%;
+        margin-left: 20%;
+    }
+      
+    .nom {
+        font-size: 1em;
+    }
+    .ref {
+        font-size: 1em;
+    }
+      
+    .taille {
+        font-size: 1em;
+    }
+      
+    .prix {
+        font-size: 1em;
+    }
+
+    .visu{
+        margin-left: 31%;
+    }
+    
+    .article img{
+        width: 90%;
+        height: 65%;
+    }
+
+
+}
